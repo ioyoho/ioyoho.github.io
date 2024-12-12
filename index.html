@@ -124,7 +124,7 @@
                <img src="yoho.png" style="height: 13px;"> 
               <i class="fa fa-circle" aria-hidden="true" style="font-size: 12px;"></i> 
               <b style="color: green;font-size: 12px;"> Online </b>
-              <label id="tt" style="font-size: 10px;color: blue"></label>            
+                         
             </h4>
 
         
@@ -137,7 +137,8 @@
             </p>
         <br>
              <p id="t" style="font-size: 12px;color: blue"></p>
-            <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button>
+        <label id="tt" style="font-size: 10px;color: blue"></label>           
+        <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button>
              <!-- <button class="btn"><i class="fa fa-info-circle" aria-hidden="true"></i> Cyber Help (coming Soon)</button>  -->
             <h5 style="color: black">𝖤𝗏𝖾𝗋𝗒𝗈𝗇𝖾 𝗐𝗂𝗅𝗅 𝖽𝗂𝖾 𝗈𝗇𝖾 𝖽𝖺𝗒</h5>
 
@@ -153,7 +154,7 @@
                start.setHours(16, 35, 0); 
         var h =  start.getHours(), m = start.getMinutes();
         var thistime = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-        document.getElementById("t").innerText = "Last Login Time : " + thistime;
+        document.getElementById("t").innerText = "Login : " + thistime;
        
         
         (function() {
@@ -174,7 +175,7 @@
           
           //console.clear();
          
-            document.getElementById("tt").innerText = hh + ":" + mm + " hrs";
+            document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hrs";
          // console.log(diff);
           setTimeout(tick, 1000);
         }
