@@ -6,40 +6,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     </head>
-<body onload="startTime()">
+<body onload="startTime()"> 
     <div class="card">
         <h6 style="color: black;">أشهد أن لا إله إلا الله وأشهد أن محمدا رسول الله</h6><label id="txt" style="font-size: 12px;color: red"></label>
             <div class="cover-photo">
                 <img src="images-68.jpeg" class="profile">
             </div>
-            <h4 class="profile-name">      
-              <i class="fa fa-circle" aria-hidden="true" style="font-size: 12px; color: red"></i> 
-              <b style="color: green;font-size: 12px;"> Syr سير <i class="fa fa-check-circle" aria-hidden="true" style="color:blue; "></i></b>
+            <h4 class="profile-name">
+              <i class="fa fa-circle" aria-hidden="true" style="font-size: 12px;"></i> 
+              <b style="color: black;font-size: 12px;"> Syr سير <i class="fa fa-check-circle" aria-hidden="true" style="color:blue; "></i> </b> 
             </h4>
             <p class="about" style="color: black;">
               <i class="fa fa-user" aria-hidden="true" style="font-size: 12px;"></i> 
-              <b> 2FA <img src="bd.png" style="height: 16px;"> </b>  <img src="yoho.png" style="height: 13px;"> <img src="live-channel.png" style="height: 16px;">
+              <b> CentOS <img src="bd.png" style="height: 16px;"> </b> <img src="yoho.png" style="height: 13px;">
             </p>
             <p style="color:black; margin-top: 10px;">
-                 <i class="fa fa-id-card" aria-hidden="true"></i> ID: <strong style="color: black">85588922</strong>
+                 <i class="fa fa-id-card" aria-hidden="true"></i> ID: <strong style="color: red">NULL</strong>
             </p>
         <p style="font-size: 14px;color: fuchsia; margin-top: 8px"><b id="t"></b></p>
            <br>
-        <p>
-       <b><span id="tt" style=" font-size : 15px; color : green;"></span></b> 
+    <p>
+       
+     <b><span id="tt" style=" font-size : 15px; color : red;"></span></b>
+            
         </p>  
             <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button>
              <!-- <button class="btn"><i class="fa fa-info-circle" aria-hidden="true"></i> Cyber Help (coming Soon)</button>  -->
             <h5 style="color: black">𝖤𝗏𝖾𝗋𝗒𝗈𝗇𝖾 𝗐𝗂𝗅𝗅 𝖽𝗂𝖾 𝗈𝗇𝖾 𝖽𝖺𝗒</h5>
+
          <h5 "><a href="https://ioyoho.github.io"/>ioyoho.github.io</h5>
+      
     </div>
     <script>
         var start = new Date;
-        start.setHours(4, 23, 0); 
+        start.setHours(2, 48, 0); 
         var h =  start.getHours(), m = start.getMinutes();
         var thistime = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-        document.getElementById("t").innerText = "Login Time : " + thistime;
-        (function() {  
+        document.getElementById("t").innerText = "Last Seen : " + thistime;
+       
+        (function() {
         function pad(num) {
           return ("0" + parseInt(num)).substr(-2);
         }
@@ -52,7 +57,7 @@
           var hh = pad((remain / 60 / 60) % 60);
           var mm = pad((remain / 60) % 60);
           var ss = pad(remain % 60);
-          document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hrs";
+          document.getElementById("tt").innerText = "Live Status : Offline";
           setTimeout(tick, 1000);
         }
         tick()
@@ -68,6 +73,7 @@
             document.getElementById('txt').innerHTML =  thistime;
           setTimeout(startTime, 1000);
         }
+        
         function checkTime(i) {
           if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
           return i;
