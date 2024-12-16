@@ -59,7 +59,7 @@
     .profile-name {
         font-size: 18px;
         margin: 25px 0 0 120px;
-        color: green;
+        color: red;
         font-weight : 700%;
     }
     
@@ -131,10 +131,10 @@
         
             <p class="about" style="color: black;">
               <i class="fa fa-user" aria-hidden="true" style="font-size: 12px;"></i> 
-              <b> CentOS <img src="bd.png" style="height: 16px;"> </b>  <img src="yoho.png" style="height: 13px;"> <img src="live-channel.png" style="height: 16px;">
+              <b> CentOS <img src="bd.png" style="height: 16px;"> </b>  <img src="yoho.png" style="height: 13px;">
             </p>
-            <p style="color:black; margin-top: 10px;">
-                 <i class="fa fa-id-card" aria-hidden="true"></i> ID: <strong style="color: black">81782270</strong>
+            <p style="color:red; margin-top: 10px;">
+                 <i class="fa fa-id-card" aria-hidden="true"></i> ID: <strong style="color: black">NULL</strong>
             </p>
      
 
@@ -161,10 +161,10 @@
 
     <script>
                var start = new Date;
-               start.setHours(23, 23, 0); 
+               start.setHours(2, 21, 0); 
         var h =  start.getHours(), m = start.getMinutes();
         var thistime = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-        document.getElementById("t").innerText = "Login Time : " + thistime;
+        document.getElementById("t").innerText = "Login Time : Offline";
        
         
         (function() {
@@ -185,7 +185,7 @@
           
           //console.clear();
          
-            document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hrs";
+            document.getElementById("tt").innerText = "Live : "Offline";
          // console.log(diff);
           setTimeout(tick, 1000);
         }
