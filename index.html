@@ -30,12 +30,15 @@
             <!-- <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button> -->
              <!-- <button class="btn"><i class="fa fa-info-circle" aria-hidden="true"></i> Cyber Help (coming Soon)</button>  -->
               <br><br>
+        <h5 style="color: black" id="addr"></h5>
             <h5 style="color: black">𝖤𝗏𝖾𝗋𝗒𝗈𝗇𝖾 𝗐𝗂𝗅𝗅 𝖽𝗂𝖾 𝗈𝗇𝖾 𝖽𝖺𝗒</h5>
          <h5 "><a href="https://ioyoho.github.io"/>ioyoho.github.io</h5>
     </div>
       <script src="index.js"></script>
     <script>
-        
+        $.getJSON("https://api.ipify.org/?format=json", function(e) {
+              document.getElementById("addr").innerText = e.ip;
+});
         var nick = '2FA 🇧🇩';
         var uid = '85588922';
         var $m = 9;
