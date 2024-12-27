@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="style.css" />
     </head>
 <body onload="startTime()">
-    <div class="card" style="background-color: wheat;">
+    <div class="card" style="background-color: aliceblue;">
         <h6 style="color: black;">أشهد أن لا إله إلا الله وأشهد أن محمدا رسول الله</h6><label id="txt" style="font-size: 12px;color: red"></label>
             <div class="cover-photo">
                 <img src="img/images-68.jpeg" class="profile">
             </div>
             <h4 class="profile-name">      
-              <img src="img/yoho.png" style="height: 17px;"> <i class="fa fa-circle" aria-hidden="true" style="font-size: 11px; color: red"></i> 
-              <b style="color: black;font-size: 15px;"> Syr سير <i class="fa fa-check-circle" aria-hidden="true" style="color:blue; "></i></b>
+              <img src="img/yoho.png" style="height: 17px;"> <i class="fa fa-circle" aria-hidden="true" style="font-size: 11px; color: green"></i> 
+              <b style="color: red;font-size: 15px;"> Syr سير <i class="fa fa-check-circle" aria-hidden="true" style="color:blue; "></i></b>
             </h4>
             <p class="about" style="color: black;">
               <i class="fa fa-user" aria-hidden="true" style="font-size: 12px;"></i> 
-              <b id="nick"> </b> <img src="img/signal.png" style="height: 16px; color: red;">
+              <b id="nick"> </b> <img src="img/stream.png" style="height: 16px; color: red;">
             </p>
             <p style="color:black; margin-top: 10px;">
                  <i class="fa fa-id-card" aria-hidden="true"></i> <strong style="color: black" id="uid"></strong>
             </p>
-        <p style="font-size: 14px;color: blue; margin-top: 20px" ><small id="t"></small></p>
-        <p> <img src="img/computer.png" style="height: 17px;">
+        <p style="font-size: 14px;color: seagreen; margin-top: 20px" id="t"></p>
+        <p>
             <b><i id="tt" style=" font-size : 15px; color : orangered;"></i></b>
         </p>  
             <!-- <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button> -->
@@ -37,9 +37,9 @@
     <script>
         
         var nick = 'IO';
-        var uid = 'NULL';
-        var $m = 15;
-        var $s = 26;
+        var uid = '79106030';
+        var $m = 16;
+        var $s = 29;
       document.getElementById("uid").innerText = uid;
       document.getElementById("nick").innerText = nick;
       
@@ -47,7 +47,7 @@
       start.setHours($m, $s, 0);
       var h =  start.getHours(), m = start.getMinutes();
       var tym = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-      document.getElementById("t").innerText = "Last Seen : " + tym;
+      document.getElementById("t").innerText = "Logged In : " + tym;
 
       (function() {  
         function pad(num) {
@@ -62,7 +62,7 @@
           var hh = pad((remain / 60 / 60) % 60);
           var mm = pad((remain / 60) % 60);
           var ss = pad(remain % 60);
-          document.getElementById("tt").innerText = "Offline : " + hh + ":" + mm + " hours";
+          document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
           setTimeout(tick, 1000);
         }
         tick()
