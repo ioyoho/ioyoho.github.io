@@ -47,7 +47,8 @@
       start.setHours($m, $s, 0);
       var h =  start.getHours(), m = start.getMinutes();
       var tym = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-      document.getElementById("t").innerText = "Logged In : " + tym;
+      //document.getElementById("t").innerText = "Logged In : " + tym;
+document.getElementById("t").innerText = "Logged In : Yesterday";
 
       (function() {  
         function pad(num) {
@@ -62,7 +63,8 @@
           var hh = pad((remain / 60 / 60) % 60);
           var mm = pad((remain / 60) % 60);
           var ss = pad(remain % 60);
-          document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
+          //document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
+            document.getElementById("tt").innerText = "Live : 24/7";
           setTimeout(tick, 1000);
         }
         tick()
