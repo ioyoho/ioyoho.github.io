@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     </head>
-<body onload="startTime()">
+<body onload="startTime()" style="background-color: white;">
     <div class="card" style="background-color: aliceblue;">
         <h6 style="color: black;">أشهد أن لا إله إلا الله وأشهد أن محمدا رسول الله</h6><label id="txt" style="font-size: 12px;color: red"></label>
             <div class="cover-photo">
@@ -36,10 +36,10 @@
       <script src="index.js"></script>
     <script>
         
-        var nick = ' ';
-        var uid = '79106030';
-        var $m = 1;
-        var $s = 33;
+        var nick = 'IO';
+        var uid = '84368862';
+        var $m = 17;
+        var $s = 12;
       document.getElementById("uid").innerText = uid;
       document.getElementById("nick").innerText = nick;
       
@@ -47,7 +47,8 @@
       start.setHours($m, $s, 0);
       var h =  start.getHours(), m = start.getMinutes();
       var tym = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
-      document.getElementById("t").innerText = "Logged In : " + tym;
+      //document.getElementById("t").innerText = "Logged In : " + tym;
+document.getElementById("t").innerText = "Logged In : Yesterday";
 
       (function() {  
         function pad(num) {
@@ -62,7 +63,8 @@
           var hh = pad((remain / 60 / 60) % 60);
           var mm = pad((remain / 60) % 60);
           var ss = pad(remain % 60);
-          document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
+          //document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
+            document.getElementById("tt").innerText = "Live : 24/7";
           setTimeout(tick, 1000);
         }
         tick()
