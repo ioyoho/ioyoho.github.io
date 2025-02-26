@@ -18,7 +18,7 @@
             </h4>
             <p class="about" style="color: black;">
               <i class="fa fa-user" aria-hidden="true" style="font-size: 12px;"></i> 
-              <b id="nick"> </b>  <i class="fa fa-circle" aria-hidden="true" style="font-size: 11px; color: green"></i> 
+              <b id="nick"> </b>  <i class="fa fa-circle" aria-hidden="true" style="font-size: 13px; color: red"></i> 
             </p>
             <p style="color:black; margin-top: 8px;">
                  <i class="fa fa-id-badge" aria-hidden="true"></i> <strong style="color: black" id="uid"></strong> <i class="fa fa-check-circle" aria-hidden="true" style="color:blue; "></i>
@@ -29,7 +29,7 @@
             </p>
         <p style="font-size: 13px;color: blue; margin-top: 20px" id="t"></p>
         <p>
-            <b><i id="tt" style=" font-size : 12px; color : orangered;"></i></b>
+            <b><i id="tt" style=" font-size : 12px; color : red;"></i></b>
         </p>  
             <!-- <button class="btn"><i class="fa fa-comment" aria-hidden="true"></i> Feedback </button> -->
              <!-- <button class="btn"><i class="fa fa-info-circle" aria-hidden="true"></i> Cyber Help (coming Soon)</button>  -->
@@ -68,7 +68,7 @@ document.getElementById("t").innerText = "Login Time : Yesterday";
           var mm = pad((remain / 60) % 60);
           var ss = pad(remain % 60);
           //document.getElementById("tt").innerText = "Live : " + hh + ":" + mm + " hours";
-            document.getElementById("tt").innerText = "Live Status : Online";
+            document.getElementById("tt").innerText = "Live Status : Offline";
           setTimeout(tick, 1000);
         }
         tick()
